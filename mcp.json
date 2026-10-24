@@ -1,0 +1,35 @@
+{
+  "name": "aladdin-blackrock-ai-mcp",
+  "version": "1.0.0",
+  "description": "Aladdin by BlackRock AI Model Context Protocol Server for Autonomous Enterprise Operating System for Investment, Aladdin Risk Telemetry & Fiduciary Infrastructure Protocol",
+  "tools": [
+    {
+      "name": "audit_aladdin_enterprise_risk",
+      "description": "Decompose multi-asset portfolio exposures, simulate tail-risk market shocks (liquidity freeze, interest rate spikes, spread widening), and calculate parametric Value-at-Risk (VaR)",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "portfolio_id": { "type": "string" },
+          "asset_classes": { "type": "string" },
+          "stress_scenario": { "type": "string" },
+          "confidence_level": { "type": "string" }
+        },
+        "required": ["portfolio_id", "asset_classes"]
+      }
+    },
+    {
+      "name": "disburse_rwa_institutional_grant",
+      "description": "Trigger automated micro-escrow releases for verified tokenized asset issuance, liquidity pool seeding, automated compliance oracles, and zero-counterparty clearing",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "recipient": { "type": "string" },
+          "amount_wei": { "type": "string" },
+          "proof_hash": { "type": "string" }
+        },
+        "required": ["category", "recipient", "amount_wei"]
+      }
+    }
+  ]
+}
